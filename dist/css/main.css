@@ -1,7 +1,7 @@
 body{font-family:"ZCOOL XiaoWei",serif;overflow-x:hidden}.btn-pink{color:salmon !important;border-color:salmon !important;transition:all 500ms ease}
 .btn-black{color:black !important;border-color:black !important;transition:all 500ms ease}
 .btn-black:hover{color:salmon !important;background:black !important}.btn-pink:hover{color:black !important;background:salmon !important}
-header{overflow:hidden;height:100vh}.navbar{position:fixed;z-index:10;background:#fff;width:100%;top:0}
+header{overflow:hidden;min-height:100vh}.navbar{position:fixed;z-index:10;background:#fff;width:100%;top:0}
 .navbar-toggler{outline:none !important}.navbar-toggler-icon{font-size:2.5rem;color:salmon}
 .nav-link{display:inline-block;color:salmon;transition:500ms ease;font-size:1.5rem}
 .nav-link:hover{color:black}.cart-info__icon{font-size:1.3rem;color:black;cursor:pointer}

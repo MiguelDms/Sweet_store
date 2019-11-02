@@ -15,7 +15,7 @@ const uglifycss = require('gulp-uglifycss');
 let jsFolder = "src/js/";
 let jsDist = "dist/js/";
 let jsWatch = "src/js/**/*";
-let jsFiles = ["main.js"]; //compilar todos os ficheiros js numa array
+let jsFiles = ["main.js", "about.js"]; //compilar todos os ficheiros js numa array
 
 let styleSrc = "src/css/*.css";
 let styleDist = "./dist/css/";
@@ -37,7 +37,7 @@ gulp.task('copyHtml', function (done) {
 // optimize images
 
 gulp.task('imageMin', function (done) {
-    gulp.src('C:/Users/Utilizador/Desktop/Web design/Templates/Full websites/Grandmas sweets/src/images/*')
+    gulp.src('C:/Users/Utilizador/Desktop/Web design/Templates/Full websites/Grandmas sweets/src/images/**/*')
         .pipe(imageMin([
             //jpg lossless
             imageMin.jpegtran({

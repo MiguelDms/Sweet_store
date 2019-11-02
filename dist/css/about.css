@@ -1,0 +1,25 @@
+body{font-family:"ZCOOL XiaoWei",serif;overflow-x:hidden}.btn-pink{color:salmon !important;border-color:salmon !important;transition:all 500ms ease}
+.btn-black{color:black !important;border-color:black !important;transition:all 500ms ease}
+.btn-black:hover{color:salmon !important;background:black !important}.btn-pink:hover{color:black !important;background:salmon !important}
+header{overflow:hidden;min-height:100vh}.navbar{position:fixed;z-index:10;background:#fff;width:100%;top:0}
+.navbar-toggler{outline:none !important}.navbar-toggler-icon{font-size:2.5rem;color:salmon}
+.nav-link{display:inline-block;color:salmon;transition:500ms ease;font-size:1.5rem}
+.nav-link:hover{color:black}.cart-info__icon{font-size:1.3rem;color:black;cursor:pointer}
+.cart-info{max-height:60px;border:.1rem solid black;border-radius:.25rem;padding:.5rem .6rem;cursor:pointer;transition:500ms ease}
+.cart-info:hover{background:salmon;border-color:salmon;color:#fff}.cart-info:hover .cart-info__icon{color:white}
+.max-height{min-height:100vh;background:linear-gradient(#534e1c,rgba(238,234,202,0.472)),url(../images/about/baked-goods-bakery-bread-192933.jpg);background-attachment:fixed;background-position:center;background-size:cover;background-repeat:no-repeat;position:relative}
+.banner{padding-top:100px}.banner-title{font-size:3.5rem;color:#fd9d92}.about-header p{color:#fff;line-height:1.5;font-size:1.2rem;width:70%;padding-top:1rem;margin:auto}
+.about-content{background:linear-gradient(#f5e876,rgba(228,223,176,0.417));padding-top:4rem}
+.arrow-down{font-size:1.5rem;transition:all 1s ease;animation:fromBottom;animation-duration:2s;animation-iteration-count:infinite;cursor:pointer;color:black;margin-top:100px}
+.arrow-down:hover{color:salmon}@keyframes fromBottom{0%{transform:translateY(-10px)}
+50%{transform:translateY(10px)}100%{transform:translateY(-10px)}}.footer-title{background:#000}
+.footer-contact{background:#ccc;padding-left:5.5rem !important}.footer-icon{font-size:2rem;color:#fff;transition:all 500ms ease}
+.footer-icon:hover{color:salmon;cursor:pointer}footer .container-fluid span{font-size:1.6rem}
+.cart{position:fixed;min-height:12rem;background:rgba(230,224,224,0.685);width:18rem !important;transform:translate(100%,0);top:106px;right:0;transition:all 1s ease-in-out;overflow:hidden;z-index:10}
+.show-cart{padding:1rem 1.5rem;transform:translate(0,0)}.cart-item{transition:all 2s ease-in-out}
+.cart-item-remove{color:salmon;transition:all 500ms ease-in-out}.cart-item-remove:hover{transform:scale(1.1);color:black}
+.cart-item-price{font-size:.8rem}#map{width:100%;height:80%}@media screen and (max-width:991px){.about-content .container{max-width:100% !important}
+.about-content p{width:100% !important}}@media screen and (max-width:770px){.about-header p{width:100%}
+}@media screen and (max-width:560px){.banner{padding-top:8rem !important}.about-header p{font-size:1rem}
+.footer-contact{background:#ccc;padding:2rem !important}}
+/*# sourceMappingURL=about.css.map */
