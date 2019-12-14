@@ -57,16 +57,16 @@
 
     <header id="header">
         <nav class="navbar navbar-expand-lg px-4">
-            <a href="#" class="navbar-brand">
-                <img src="images/iconfinder_Food_C228_2427887.svg" alt="icon principal" height="80">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/iconfinder_Food_C228_2427887.svg" alt="icon principal" height="60">
             </a>
             <div class="d-flex justify-content-end">
                 <span class="cart-info__icon m-lg-auto d-lg-none d-block align-self-center cart-info" id="cart-info">
                     <i class="fas fa-shopping-cart"></i>
                 </span>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar"><span
-                        class="navbar-toggler-icon mt-3">
-                        <i class="fas fa-bars"></i>
+                        class="navbar-toggler-icon">
+                        <i class="fas fa-bars pt-2"></i>
                     </span></button>
             </div>
 
@@ -214,7 +214,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 mx-0 mx-lg-auto col-md-6 my-3  align-self-center">
-                    <p class=" mx-0 mx-lg-auto w-75 ">
+                    <p class=" mx-0 mx-lg-auto">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea tempore, excepturi reiciendis quo
                         molestiae ipsa cupiditate doloribus possimus laboriosam in et eos autem itaque numquam ex.
                         Obcaecati eligendi nobis ducimus adipisci odit aperiam necessitatibus, voluptatem a
@@ -238,7 +238,7 @@
                     </div>
                 </div>
                 <div class="col-12  mx-md-0 mx-lg-auto col-md-6 my-1 my-lg-5 align-self-center">
-                    <p class=" mx-0 mx-lg-auto w-75 ">
+                    <p class=" mx-0 mx-lg-auto">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea tempore, excepturi reiciendis quo
                         molestiae ipsa cupiditate doloribus possimus laboriosam in et eos autem itaque numquam ex.
                         Obcaecati eligendi nobis ducimus adipisci odit aperiam necessitatibus, voluptatem a
@@ -261,22 +261,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 footer-title py-5 d-flex flex-column">
-                    <h1 class="text-capitalize text-center">
-                        <strong class="banner-title">Loja</strong>
-                    </h1>
-
                     <div id="map" class=""></div>
-
-
                 </div>
                 <div class="col-md-6 footer-contact text-center text-capitalize p-lg-5 py-md-5">
-                    <h3 class="mb-5">Contacto</h3>
-                    <p class="d-flex flex-wrap">
+                    <h3 class="mb-5 font-weight-bolder">Contacto</h3>
+                    <p class="d-flex">
                         <span class="mr-4 footer-icon">
                             <i class="fas fa-map"></i>
                         </span>
                         <span>
-                            Blah blah casa aqui
+                            Rua estrada casa nº99 4000-001 Porto
                         </span>
                     </p>
                     <p class="d-flex flex-wrap">
@@ -296,7 +290,7 @@
                         </span>
                     </p>
 
-                    <div class="footer-icons mt-3 py-2 d-flex justify-content-around flex-wrap">
+                    <div class="footer-icons mt-3 pb-2 pt-4 d-flex justify-content-around flex-wrap">
                         <a href="#" class="footer-icon">
                             <i class="fab fa-facebook"></i>
                         </a>
@@ -312,9 +306,31 @@
             </div>
         </div>
     </footer>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBj54QnHNdGR3t_wfytPSdwioP4QxJg2UM&callback=initMap"
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD9UYCK7G1dI1JDIWOsEe5CcmgAWxgi_2k&callback=initMap"
         async defer></script>
     <script src="js/about.min.js"></script>
+
+    <script>
+        var map;
+
+        function initMap() {
+
+            var stand = {
+                lat: 41.1583237,
+                lng: -8.6286505
+            };
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: stand
+            });
+
+            var marker = new google.maps.Marker({
+                position: stand,
+                map: map
+            });
+        }
+    </script>
 
 </body>
 
